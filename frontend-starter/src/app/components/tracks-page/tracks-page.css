@@ -1,1 +1,8 @@
 :host { display: block; }
+.library { min-width: 0; }
+.track-card { margin: 1rem 0; overflow-wrap: anywhere; }
+.track-card h3 { margin-top: 0; }
+.track-card small { display: block; margin-bottom: 1rem; }
+.row, .pager { flex-wrap: wrap; }
+input { width: 100%; min-width: 0; }
+.grid > .card { align-self: start; min-width: 0; }

@@ -1,0 +1,18 @@
+Commande : npm.cmd test
+Code de sortie observé : 0
+
+> gpc-angular-starter@1.0.0 test
+> ng test --watch=false
+
+> Building...
+√ Building...
+Application bundle generation complete. [1.341 seconds] - 2026-10-02T19:24:21.339Z
+
+
+ RUN  v4.1.11 C:/Users/Auguste/Documents/_Scolaire/miage/Prog Web - angular - Michel B/full ia/AngularM1_Miage_2026_2027_TP123/frontend-starter
+
+
+ Test Files  4 passed (4)
+      Tests  14 passed (14)
+   Start at  21:24:21
+   Duration  1.10s (transform 181ms, setup 833ms, import 290ms, tests 180ms, environment 2.37s)

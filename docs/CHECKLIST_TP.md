@@ -15,13 +15,13 @@ Les cases ne sont cochées qu'après vérification. Les tests HTTP simulés ne c
 
 ## TP2 — missions 2 et 3 (le sujet ne contient pas de mission 4)
 
-- [ ] Pagination serveur page/limit ; Signals tracks/page/pages/loading/error ; @if/@for/@empty ; bornes.
-- [ ] Validation fichier présent, formats MIME backend et limite 25 × 1024² octets avant HTTP.
-- [ ] Upload multipart audio/title, chargement, anti-double envoi, erreurs/succès, reset et page 1.
-- [ ] Cards responsives/accessibles ; morceau courant et erreur audio.
-- [ ] Blob authentifié, ObjectURL remplacée et révoquée à la destruction ; annulation des requêtes obsolètes.
-- [ ] Explications mémoire/buffering/streaming, tests/build, rapport/preuves.
-- [ ] Network réel pagination/upload/lecture ; validation serveur 400 ; accès autre propriétaire refusé.
+- [x] Pagination serveur page/limit ; Signals tracks/page/pages/loading/error ; @if/@for/@empty ; bornes.
+- [x] Validation fichier présent, formats MIME backend et limite 25 × 1024² octets avant HTTP.
+- [x] Upload multipart audio/title, chargement, anti-double envoi, erreurs/succès, reset et page 1.
+- [x] Cards responsives/accessibles ; morceau courant et erreur audio.
+- [x] Blob authentifié, ObjectURL remplacée et révoquée à la destruction ; annulation des requêtes obsolètes.
+- [x] Explications mémoire/buffering/streaming, tests/build, rapport/preuves.
+- [x] Network réel pagination/upload/lecture ; validation serveur 400 ; accès autre propriétaire refusé.
 
 ## TP3 — missions 5 à 7
 
@@ -34,7 +34,7 @@ Les cases ne sont cochées qu'après vérification. Les tests HTTP simulés ne c
 ## Git et livrables
 
 - [x] original local et distant déjà présents, intacts.
-- [ ] TP1 : commit relu, snapshot TP1 et push main/TP1.
+- [x] TP1 : commit relu 290b686, snapshot TP1 et push main/TP1 réalisés.
 - [ ] TP2 : commit relu, snapshot TP1+2 et push main/TP1+2.
 - [ ] TP3 : commit relu, snapshot TP1+2+3 et push main/TP1+2+3.
 

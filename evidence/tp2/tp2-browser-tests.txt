@@ -1,0 +1,10 @@
+Commande : npx.cmd playwright test browser-tests/tp2.spec.ts
+Code de sortie observé : 0
+
+Running 1 test using 1 worker
+
+(node:13912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 browser-tests\tp2.spec.ts:6:5 › TP2 — pagination, upload, Blob audio et propriété sur API réelle (2.7s)
+
+  1 passed (3.3s)

@@ -1,0 +1,112 @@
+[
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=2&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks/6ac004a0e762e12cba72a333/audio",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 400
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/register",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/me",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks/6ac004a0e762e12cba72a333/audio",
+    "status": 404
+  }
+]

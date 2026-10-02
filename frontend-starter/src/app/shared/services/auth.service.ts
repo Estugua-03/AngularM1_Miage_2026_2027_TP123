@@ -25,15 +25,21 @@ export class AuthService {
   }
 
   profile() {
+    const session = this.token();
     return this.http
       .get<User>('/api/users/me')
-      .pipe(tap((user) => this.currentUser.set(user)));
+      .pipe(tap((user) => {
+        if (session === this.token()) this.currentUser.set(user);
+      }));
   }
 
   update(name: string) {
+    const session = this.token();
     return this.http
       .put<User>('/api/users/me', { name })
-      .pipe(tap((user) => this.currentUser.set(user)));
+      .pipe(tap((user) => {
+        if (session === this.token()) this.currentUser.set(user);
+      }));
   }
 
   logout(): void {

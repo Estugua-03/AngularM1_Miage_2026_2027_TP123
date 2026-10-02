@@ -1,0 +1,12 @@
+Commande : npx.cmd playwright test browser-tests/tp1.spec.ts
+Code de sortie : 0
+
+Running 3 tests using 1 worker
+
+(node:6752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 browser-tests\tp1.spec.ts:6:5 › TP1 — navigation et validation de formulaire dans Chrome réel (399ms)
+  ok 2 browser-tests\tp1.spec.ts:17:5 › TP1 — inscription réelle puis email déjà utilisé (680ms)
+  ok 3 browser-tests\tp1.spec.ts:42:5 › TP1 — login refusé/accepté, profil PUT, logout et JWT invalide sur API réelle (1.0s)
+
+  3 passed (2.8s)

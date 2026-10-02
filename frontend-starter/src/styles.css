@@ -27,6 +27,11 @@ button:disabled { opacity: 0.45; }
 .pager { margin: 1rem 0; }
 audio { width: 100%; }
 .error { color: #a33; }
+fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+input, button { font: inherit; }
+:focus-visible { outline: 3px solid #b96500; outline-offset: 3px; }
+button:disabled { cursor: default; }
+nav { align-items: center; flex-wrap: wrap; }
 
 @media (max-width: 720px) {
   header, .grid { display: block; }

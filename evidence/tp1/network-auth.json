@@ -1,0 +1,42 @@
+[
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "status": 401
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/me",
+    "status": 200
+  },
+  {
+    "method": "PUT",
+    "path": "/api/users/me",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/me",
+    "status": 401
+  },
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  }
+]

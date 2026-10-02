@@ -1,0 +1,18 @@
+Commande : npm.cmd run build
+Dossier : frontend-starter
+Code de sortie observé : 0
+
+> gpc-angular-starter@1.0.0 build
+> ng build
+
+> Building...
+√ Building...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+main.js             | main          | 297.56 kB |                78.48 kB
+styles.css          | styles        |   1.49 kB |               564 bytes
+
+                    | Initial total | 299.04 kB |                79.05 kB
+
+Application bundle generation complete. [5.166 seconds] - 2026-10-02T19:05:28.438Z
+
+Output location: C:\Users\Auguste\Documents\_Scolaire\miage\Prog Web - angular - Michel B\full ia\AngularM1_Miage_2026_2027_TP123\frontend-starter\dist\gpc

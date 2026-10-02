@@ -18,12 +18,19 @@ export class TrackService {
     const body = new FormData();
     body.append('audio', file);
     body.append('title', title);
-    return this.http.post<Track>('/api/tracks', body);
+    // Plusieurs événements (Sent, UploadProgress, Response), pas seulement le Track final.
+    return this.http.post<Track>('/api/tracks', body, {
+      observe: 'events', reportProgress: true,
+    });
   }
 
   audio(id: string) {
     return this.http.get(`/api/tracks/${id}/audio`, {
       responseType: 'blob',
     });
+  }
+
+  delete(id: string) {
+    return this.http.delete<void>(`/api/tracks/${id}`);
   }
 }

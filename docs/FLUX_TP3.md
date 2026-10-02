@@ -1,0 +1,11 @@
+# Suppression et progression : missions 5 et 6
+
+`TracksPageComponent.remove(track)` (`components/tracks-page/tracks-page.ts`) vérifie le verrou deletingId, demande window.confirm(), puis appelle `TrackService.delete(id)` (`shared/services/track.service.ts`). Le service utilise `HttpClient.delete<void>()` sur `/api/tracks/:id`. `authInterceptor` ajoute le Bearer ; Express `auth` vérifie le JWT, puis `Track.findOneAndDelete({_id, ownerId: req.auth.sub})` et unlink suppriment métadonnée et fichier. La réponse 204 déclenche SnackBar et load(). Les 403/404/500 affichent une erreur SnackBar et rechargent pour retirer une card périmée. Le backend existant peut avoir supprimé la métadonnée avant un échec disque 500 : l'UI n'annonce donc pas un succès.
+
+Le guard et le bouton sont des aides d'interface, contournables par un client HTTP. La propriété est vérifiée réellement dans la requête MongoDB côté backend. Si page > pages après une suppression, load() effectue un second GET de la dernière page valide, sans pagination locale. Supprimer le morceau courant appelle stopAudio(), y compris si son Blob était encore en cours de téléchargement.
+
+`TrackService.upload()` conserve FormData audio/title mais renvoie désormais `Observable<HttpEvent<Track>>`, avec observe:'events' et reportProgress:true. `src/main.ts` configure withXhr(), documenté dans les types Angular 22 installés : le backend Fetch utilisé par défaut ne signale pas la progression d'upload. Ceci change uniquement le transport frontend, pas le contrat HTTP.
+
+L'Observable émet plusieurs next : Sent (début), UploadProgress (loaded/total éventuel), Response (résultat final). `upload()` ignore les événements non pertinents, calcule un pourcentage borné à 100 quand total est connu, affiche un progress indéterminé sinon. À 100 %, l'interface attend encore Response ; seul ce dernier valide le succès, vide le formulaire et recharge page 1. Une erreur passe à l'état error, conserve le fichier pour retry et affiche un message. finalize remet uploading à false même si la requête échoue ou si le composant est détruit.
+
+États : idle à l'ouverture/nouveau choix, uploading durant requête, success après réponse finale, error après validation ou erreur HTTP. Les contrôles sont désactivés via fieldset et upload() possède aussi un verrou logiciel : cliquer deux fois ne crée pas deux pistes.

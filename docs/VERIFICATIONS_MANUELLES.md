@@ -1,6 +1,6 @@
 # Vérifications réelles à effectuer localement
 
-L'agent n'a accès à aucun navigateur. Rien ci-dessous n'est déclaré réussi sans observation ou retour de l'utilisateur. Les tests jsdom utilisent des réponses simulées, pas MongoDB.
+Ce guide a été préparé quand l'outil CUA ne détectait aucun navigateur. Après la demande de l'utilisateur, Chrome local a été piloté par Playwright : voir les résultats réellement observés dans le rapport et evidence/tp1, tp2, tp3. Ce guide sert à reproduire les contrôles et compléter les cas manuels. Les tests jsdom utilisent des réponses simulées, pas MongoDB. Les captures Network fournies représentent les événements HTTP réels enregistrés par Playwright, pas les DevTools.
 
 ## Configuration locale
 
@@ -37,5 +37,9 @@ Terminaux distincts : `cd backend` puis `npm.cmd start` ; `cd frontend-starter` 
 5. Captures expurgées liste Network DELETE/upload dans `evidence/tp3/network-delete-upload.png` et progression visible dans `evidence/tp3/upload-progress.png`. Vérifier console sans erreur inattendue ni secret.
 
 ## Compte rendu humain
+
+Restent à effectuer personnellement : inspection des collections Atlas, expiration naturelle après 2 h, essai de fichiers réels WAV/OGG/M4A sur votre navigateur et, si demandé, captures de la liste DevTools expurgée. Ces points ne sont pas assimilés à des observations de l'agent. Le traitement 401, les six MIME et la limite 25 Mo sont couverts par les tests décrits ; les pistes de test créées lors de cette session ont été supprimées, les deux comptes de test restent dans Atlas.
+
+Pour répéter les tests : npm.cmd test dans frontend-starter (sans API/MongoDB), npm.cmd test dans backend, npm.cmd run build dans frontend-starter. Les scripts browser-tests sont des tests d'intégration qui nécessitent npm.cmd start dans les deux projets et Chrome local. Les exécuter séquentiellement TP1 → TP2 → TP3 crée des comptes/pistes de test puis supprime uniquement les ids créés par TP2/TP3. TP3 lit les ids d'evidence/tp2/fixture-tracks.json : il nécessite donc une nouvelle exécution TP2 avant une nouvelle exécution TP3. Ne pas publier traces/HAR/storageState. Les prompts d'autorisation reçus dans cette session concernent uniquement l'environnement local de TP.
 
 Pour chaque TP, indiquer les scénarios réellement essayés, les statuts observés et les éventuels échecs. Les phrases « nous avons compris » et les acquis de chaque membre sont à remplir par le binôme, jamais par l'agent.

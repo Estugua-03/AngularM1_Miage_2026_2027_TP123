@@ -25,17 +25,17 @@ Les cases ne sont cochées qu'après vérification. Les tests HTTP simulés ne c
 
 ## TP3 — missions 5 à 7
 
-- [ ] DELETE via TrackService après confirmation ; anti-double clic ; SnackBar succès/erreur ; rechargement.
-- [ ] Ressource disparue/interdite, dernière page vide et piste en lecture supprimée traitées.
-- [ ] Événements HTTP upload : repos, envoi, pourcentage ou total inconnu, succès, échec ; contrôles désactivés.
-- [ ] Au moins trois tests frontend significatifs, indépendants du backend et de MongoDB.
-- [ ] Tests frontend/backend et build ; rapport des résultats ; Network réel DELETE/upload et console.
+- [x] DELETE via TrackService après confirmation ; anti-double clic ; SnackBar succès/erreur ; rechargement.
+- [x] Ressource disparue/interdite, dernière page vide et piste en lecture supprimée traitées (HTTP simulé et Chrome réel pour 404/204).
+- [x] Événements HTTP upload : repos, envoi, pourcentage ou total inconnu, succès, échec ; contrôles désactivés.
+- [x] 22 tests frontend significatifs, indépendants du backend et de MongoDB.
+- [x] Tests frontend/backend et build ; rapport des résultats ; Network réel DELETE/upload ; aucune erreur JavaScript non gérée dans le scénario Chrome.
 
 ## Git et livrables
 
 - [x] original local et distant déjà présents, intacts.
 - [x] TP1 : commit relu 290b686, snapshot TP1 et push main/TP1 réalisés.
-- [ ] TP2 : commit relu, snapshot TP1+2 et push main/TP1+2.
+- [x] TP2 : commit relu 056e374, snapshot TP1+2 et push main/TP1+2 réalisés.
 - [ ] TP3 : commit relu, snapshot TP1+2+3 et push main/TP1+2+3.
 
 Aucune extension facultative (paginator Material, plugin Mongoose, filtres, couvertures) n'est prévue. Suppression et progression deviennent obligatoires dans TP3.

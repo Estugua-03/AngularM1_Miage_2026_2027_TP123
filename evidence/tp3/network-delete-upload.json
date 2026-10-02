@@ -1,0 +1,122 @@
+[
+  {
+    "method": "POST",
+    "path": "/api/auth/login",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "path": "/api/tracks",
+    "status": 201
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks/6ac007b7e762e12cba72a337/audio",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac007b7e762e12cba72a337",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=2&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac0049fe762e12cba72a32e",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=2&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac004a0e762e12cba72a333",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac004a0e762e12cba72a332",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac004a0e762e12cba72a331",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac004a0e762e12cba72a330",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac0049fe762e12cba72a32f",
+    "status": 204
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/tracks/6ac0049fe762e12cba72a32e",
+    "status": 404
+  },
+  {
+    "method": "GET",
+    "path": "/api/tracks?page=1&limit=5",
+    "status": 200
+  }
+]

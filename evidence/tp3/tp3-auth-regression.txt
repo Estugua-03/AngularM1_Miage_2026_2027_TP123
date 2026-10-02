@@ -1,0 +1,11 @@
+Commande : npx.cmd playwright test browser-tests/tp1.spec.ts --grep 'navigation et validation|login refusé'
+Code de sortie observé : 0
+
+Running 2 tests using 1 worker
+
+(node:1372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 browser-tests\tp1.spec.ts:6:5 › TP1 — navigation et validation de formulaire dans Chrome réel (381ms)
+  ok 2 browser-tests\tp1.spec.ts:42:5 › TP1 — login refusé/accepté, profil PUT, logout et JWT invalide sur API réelle (1.1s)
+
+  2 passed (2.1s)

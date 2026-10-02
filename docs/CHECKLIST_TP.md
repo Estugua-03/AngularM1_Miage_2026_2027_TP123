@@ -36,6 +36,8 @@ Les cases ne sont cochées qu'après vérification. Les tests HTTP simulés ne c
 - [x] original local et distant déjà présents, intacts.
 - [x] TP1 : commit relu 290b686, snapshot TP1 et push main/TP1 réalisés.
 - [x] TP2 : commit relu 056e374, snapshot TP1+2 et push main/TP1+2 réalisés.
-- [ ] TP3 : commit relu, snapshot TP1+2+3 et push main/TP1+2+3.
+- [x] TP3 : commit relu 1f91eb3, snapshot TP1+2+3 et push main/TP1+2+3 réalisés.
 
 Aucune extension facultative (paginator Material, plugin Mongoose, filtres, couvertures) n'est prévue. Suppression et progression deviennent obligatoires dans TP3.
+
+Les preuves observées et les contrôles humains restant à reproduire sont distingués dans le rapport : expiration naturelle après 2 h, vérification Atlas, fichiers réels WAV/OGG/M4A, éventuelles captures DevTools et acquis individuels. Les captures Network présentes sont des relevés HTTP réels Playwright expurgés.

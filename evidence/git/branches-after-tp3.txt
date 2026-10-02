@@ -1,0 +1,24 @@
+Observation réelle après push TP3, avant commit documentaire de clôture sur main.
+Code de sortie : 0
+290b686405f60793680d7b38130a855bdbd39b61	refs/heads/TP1
+056e374118b260f03e4bf5a8cdb62e818fb27b9d	refs/heads/TP1+2
+1f91eb3432a87e1a69ce4a840aca0ead3a4de21d	refs/heads/TP1+2+3
+1f91eb3432a87e1a69ce4a840aca0ead3a4de21d	refs/heads/main
+3d1080c5d73fa3146799b0918ae325c983d454bc	refs/heads/original
+## main...origin/main
+  TP1                     290b686 TP1: complete authentication and profile with verified evidence
+  TP1+2                   056e374 TP2: validate uploads and secure paginated audio library
+  TP1+2+3                 1f91eb3 TP3: add confirmed deletion, upload progress and frontend tests
+* main                    1f91eb3 [origin/main] TP3: add confirmed deletion, upload progress and frontend tests
+  original                3d1080c Suppression fichiers inutiles
+  remotes/origin/HEAD     -> origin/main
+  remotes/origin/TP1      290b686 TP1: complete authentication and profile with verified evidence
+  remotes/origin/TP1+2    056e374 TP2: validate uploads and secure paginated audio library
+  remotes/origin/TP1+2+3  1f91eb3 TP3: add confirmed deletion, upload progress and frontend tests
+  remotes/origin/main     1f91eb3 TP3: add confirmed deletion, upload progress and frontend tests
+  remotes/origin/original 3d1080c Suppression fichiers inutiles
+1f91eb3 TP3: add confirmed deletion, upload progress and frontend tests
+056e374 TP2: validate uploads and secure paginated audio library
+290b686 TP1: complete authentication and profile with verified evidence
+91f27e4 atlas setup
+3d1080c Suppression fichiers inutiles

@@ -1,0 +1,5 @@
+Observation réelle après push TP3, avant commit documentaire de clôture sur main.
+Code de sortie : 0
+To https://github.com/Estugua-03/AngularM1_Miage_2026_2027_TP123.git
+   056e374..1f91eb3  main -> main
+ * [new branch]      TP1+2+3 -> TP1+2+3
